@@ -1,0 +1,202 @@
+/* 
+    Created on : 08 Jul 2022, 07:27:17
+    Author     : ethanrajkumar
+*/
+
+* {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.navBackground {
+    width: 100%;
+    background: #003366;
+    height: 80px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    display: inline-block;
+}
+
+nav {
+    width: calc(100% - 20px);
+    height: 60px;
+    margin: 10px;
+    background-color: #0066cc;
+    border-radius: 30px;
+}
+
+.contactMe {
+    width: 125px;
+    height: 50px;
+    background-color: #0a0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: darkgreen 7px solid;
+    transition: 0.125s ease-out 100ms;
+        
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contactMe:hover {
+    width: 135px;
+    height: 60px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 30px;
+    font-size: 17px;
+    border: darkgreen 9px solid;
+}
+
+.contactMe a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    height: calc(100% - 20px);
+    margin-left: 10px;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0066cc;
+    border-radius: 20px;
+    color: white;
+    float: right;
+    margin-right: 10px;
+    
+    transition: 0.125s ease-out 100ms;
+}
+
+nav ul li:hover {
+    background-color: #003366;
+}
+
+nav ul li.logo:hover {
+    background-color: #003366;
+}
+
+nav ul li.logo {
+    width: 200px;
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    text-shadow: 2px 2px white, 2px 0px white, 2px -2px white, 0px -2px white, -2px -2px white, -2px 0px white, -2px 2px white, 0px 2px white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    background: white;
+    z-index: -5;
+}
+
+.bubbles {
+    width: 100vw;
+    height: 75vh;
+    background-image: url("Assets/blue-city.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    
+    display: inline-flex;
+    align-content: center;
+    color: white;
+    font-size: calc(100vh / 15);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bubbles p {
+    margin-top: 10vh;
+    color: white;
+    text-shadow: 0px 0px 10px #036, 0px 0px 5px #036;
+}
+
+.bubbles img {
+    height: 25vh;
+    margin-top: 8vh;
+    margin-left: 5vw;
+    filter: drop-shadow(0px 0px 5px #036);
+    z-index: 0;
+}
+
+section {
+    margin: 10px 10% 0 10%;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 5vh;
+    width: 45vh;
+    background: #06c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    border-top-right-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    position: relative;
+    left: -30px;
+    filter: drop-shadow(7px 7px 0px rgba(0, 64, 128, 0.25));
+    color: white;
+}
+
+.folded-title .title-fold {
+    background-color: black;
+    position: relative;
+    top: -10px;
+    left: -30px;
+    z-index: 5;
+    transform: rotate(-90deg);
+    
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom right, #036 0%, #036 50%, #02a 50%, #02a 100%);
+}
+
+section article {
+    padding: 0px 20px 5px 20px;
+    font-size: 3vh;
+    z-index: -6;
+}
+
+article .text-image-pair {
+    display: inline-flex;
+}
+
+section .text-image-pair img {
+    margin-left: 20px;
+    border-radius: 30px;
+    border: #06c solid 10px;
+}
+
