@@ -12,40 +12,40 @@
     </head>
     <body>
         <header>
-            <div class="navBackground">
-                <nav>
-                    <ul>
-                        <li class="logo">ETHAN RAJKUMAR</li>
-                        <li class="hoverable"><a href="./projects">PROJECTS</a></li>
-                        <li class="hoverable"><a href="./aboutMe.html">ABOUT</a></li>
-                        <li class="selected"><a href="./index.html">HOME</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="contactMe"><a href="./contact">CONTACT ME!</a></div>
+            <nav>
+                <ul>
+                    <li class="logo nav-bubble">Ethan Rajkumar</li>
+                    <li class="nav-link"><a href="./contact.html">Contacts</a></li>
+                    <li class="nav-link"><a href="./projects.html">Projects</a></li>
+                    <li class="nav-link"><a href="./about.html">About</a></li>
+                    <li class="nav-link"><a href="#">Home</a></li>
+                </ul>
+            </nav>
         </header>
-        <main>
-            <div class="bubbles">
+        <div class="banner">
                 <p>I'm an aspiring<br>Software Engineer.</p>
                 <img src="Assets/settings.png" alt="">
-            </div>
-            <section>
-                <h2>About Me</h2>
-                <article>
-                    <div class="text-image-pair">
-                        <p>My name is Ethan Rajkumar. I am an undergraduate student at Wentworth Institute of Technology in Boston, 
-                        MA. I am studying computer engineering in hopes of becoming a master-class software developer.
-                        <br><br>It all started when a laptop fell into my hands at the age of 14. YouTube recognized I loved 
-                        videos on gaming, so the inner algorithm took a chance and showed me how to create my own. Ever 
-                        since then, I have taken up programming as a personal hobby, and now a potential carrier.</p>
-                        <img height="256" src="Assets/portrait.JPG" alt="image of Ethan">
-                    </div>
-                </article>
-                <h2>My Skills</h2>
-                <article>
-                    <p>I am a self-taught programmer since high school. As of now, the languages I am proficient in are C#, Java,
-                        and Python.<p>
-                </article>
+        </div>
+        <main>
+            <section class="about-me">
+                <h1>Ethan Rajkumar</h1>
+                <h2>A Computer Engineering<br>Student in Boston, MA</h2>
+                <p>Enrolled at Wentworth Institute of Technology<br>with a minor in Computer Science</p>
+                <div class="portrait-bg"></div>
+                <div class="portrait grid-image"></div>
+                <a href="./about.html" class="more-button">More About Me</a>
+            </section>
+            <section class="languages">
+                <h1>A Variety of Languages</h1>
+                <div class="white-block"></div>
+                <div class="dark-block"></div>
+                <div class="csharp-logo grid-image" title="C Sharp"></div>
+                <div class="java-logo grid-image" title="Java"></div>
+                <div class="python-logo grid-image" title="Python"></div>
+                <p class="c-sharp-text">C-Sharp is the language I started with, and have easily had the most experience developing frameworks and architecture for.</p>
+                <p class="java-text">I learned Java in my first Computer Science class. I've learned to connect to databases and retrieve data sets.</p>
+                <p class="python-text">Python is the newest language I've learned, and the one where I've learned to develop portable, cross-platform code.</p>
+                <a href="./projects.html" class="more-button">My Projects</a>
             </section>
         </main>
     </body>
